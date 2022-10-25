@@ -26,7 +26,18 @@ public class TP2_manip_BOUZIDI {
         System.out.println("le nombre de calories de assiette 2 est : "+assiette2.nbCalories);
         
         //Q6:La premiere ligne serait juste si assiette1 etait defini avec newMoussaka ;la deuxième ligne est fausse car  une référence objet qui annonce référencer un type d’objet ne peut pas en référencer un autre qui n’a aucun rapport
-    
-    }
+    Moussaka [] reference=new Moussaka[10];//le type du tableau est moussaka donc des objets
+            reference[0]=new Moussaka(125);//on va crée dix valeurs de moussaka
+            reference[1]=new Moussaka(800);
+            reference[2]=new Moussaka(650);
+            reference[3]=new Moussaka(165);
+            reference[4]=new Moussaka(235);
+            reference[5]=new Moussaka(12);
+            reference[6]=new Moussaka(456);
+            reference[7]=new Moussaka(678);
+            reference[8]=new Moussaka(123);
+            reference[9]=new Moussaka(987);
+            System.out.println(reference[5].nbCalories);
+        }
     
 }
