@@ -12,10 +12,12 @@ public class Voiture {
 String Modele;   
 String Marque;
 int PuissanceCV;
- public Voiture(String modele,String marque,int puissancecv) {//on cree le constructeur associé
+Personne Proprietaire;//reference vers une personne
+public Voiture(String modele,String marque,int puissancecv) {//on cree le constructeur associé
     Modele=modele;//on initialise tous les attributs
     Marque=marque;
     PuissanceCV=puissancecv;
+    Proprietaire=null;
 }   
 public String toString() {
     String chaine_a_retourner;
