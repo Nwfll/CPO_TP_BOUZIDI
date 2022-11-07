@@ -75,6 +75,7 @@ public class fenetrePrincipale extends javax.swing.JFrame {
                 new fenetrePrincipale().setVisible(true);
             }
         });
+        System.out.println("Hello,lancement de la fenetre");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
