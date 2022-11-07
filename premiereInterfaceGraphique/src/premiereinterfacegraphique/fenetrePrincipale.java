@@ -26,21 +26,161 @@ public class fenetrePrincipale extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        slp2 = new javax.swing.JLabel();
+        Zonetexte = new javax.swing.JTextField();
+        Valider = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        prenom = new javax.swing.JLabel();
+        Titre = new javax.swing.JLabel();
+        mdp = new javax.swing.JLabel();
+        mail = new javax.swing.JLabel();
+        Zonetexte2 = new javax.swing.JTextField();
+        valider2 = new javax.swing.JButton();
+        valider3 = new javax.swing.JButton();
+        categorie = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setForeground(new java.awt.Color(255, 255, 255));
+
+        Zonetexte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ZonetexteActionPerformed(evt);
+            }
+        });
+
+        Valider.setText("valider");
+        Valider.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ValiderActionPerformed(evt);
+            }
+        });
+
+        prenom.setText("Entrez votre prénom :");
+
+        Titre.setText("Création de votre compte PH:");
+
+        mdp.setText("Création de votre mot de passe :");
+
+        mail.setText("Entrez votre adresse mail :");
+
+        Zonetexte2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Zonetexte2ActionPerformed(evt);
+            }
+        });
+
+        valider2.setText("valider");
+        valider2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                valider2ActionPerformed(evt);
+            }
+        });
+
+        valider3.setText("entrer");
+        valider3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                valider3ActionPerformed(evt);
+            }
+        });
+
+        categorie.setText("Quelle est votre catégorie préferée ? :");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MILF", "Teen", "Grany", "BBC" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Titre)
+                .addGap(128, 128, 128))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(categorie)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(prenom, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(Zonetexte, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(mdp, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(Valider)
+                                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(10, 10, 10)
+                                    .addComponent(slp2))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(6, 6, 6)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(mail)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(Zonetexte2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(valider2))))
+                .addGap(18, 18, 18)
+                .addComponent(valider3)
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(9, 9, 9)
+                .addComponent(Titre)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Zonetexte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Valider)
+                    .addComponent(slp2)
+                    .addComponent(prenom))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(mail)
+                    .addComponent(Zonetexte2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valider2))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(mdp)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valider3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(categorie)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ZonetexteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZonetexteActionPerformed
+    // TODO add your handling code here:
+    }//GEN-LAST:event_ZonetexteActionPerformed
+
+    private void ValiderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ValiderActionPerformed
+     String nomUser = Zonetexte.getText();
+    slp2.setText("Bonjour " +nomUser);   // TODO add your handling code here:
+    }//GEN-LAST:event_ValiderActionPerformed
+
+    private void Zonetexte2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Zonetexte2ActionPerformed
+          // TODO add your handling code here:
+    }//GEN-LAST:event_Zonetexte2ActionPerformed
+
+    private void valider2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valider2ActionPerformed
+      String NomUser = Zonetexte2.getText();
+      // TODO add your handling code here:
+    }//GEN-LAST:event_valider2ActionPerformed
+
+    private void valider3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valider3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_valider3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +219,18 @@ public class fenetrePrincipale extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Titre;
+    private javax.swing.JButton Valider;
+    private javax.swing.JTextField Zonetexte;
+    private javax.swing.JTextField Zonetexte2;
+    private javax.swing.JLabel categorie;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JLabel mail;
+    private javax.swing.JLabel mdp;
+    private javax.swing.JLabel prenom;
+    private javax.swing.JLabel slp2;
+    private javax.swing.JButton valider2;
+    private javax.swing.JButton valider3;
     // End of variables declaration//GEN-END:variables
 }
